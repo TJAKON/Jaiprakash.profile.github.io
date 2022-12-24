@@ -1,0 +1,343 @@
+/* .header{
+    border: 2px solid black;
+    justify-content: center;
+} */
+body{
+  font-family: sans-serif;    
+}
+nav{
+  padding: 0px;
+  margin: 0%;
+  background: rgba(257,257,257,0.5);
+  backdrop-filter: blur(10px);
+}
+.container{
+  max-width: 1110px;
+  /* padding-top: 6rem; */
+    /* border: 2px solid black; */
+}
+.nav-homepage{
+  padding: 0px 33px;
+}
+.btn-3-1{
+  display: none;
+}
+.nav-section{
+  margin-top: 100px;
+}
+.s-btn{
+  position:absolute;
+  top: 10px;
+  right: 123px;
+}
+
+/***************** MAIN FRAME********************/
+.main-slide{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 5px 5px 15px gray;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 1.5rem;
+  }
+  input[name="r"]{
+    position: absolute;
+    display:none;
+}
+.slides{
+    width: 300%;
+    height: 100%;
+    display: flex;
+  }
+  .slide{
+    width: 33.33%;
+    transition: all 0.50s ease;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  .slide-heading{
+    bottom: 20%;
+    left: 25%;
+    transform: translateX(-80%);
+  }
+  .slide-info{
+    bottom: 12%;
+    left: 24%;
+    transform: translateX(-75%);
+  }
+  #img1:checked ~ .s1{
+    margin-left: 0%;
+  }
+  #img2:checked ~ .s1{
+    margin-left: -33.3%;
+  }
+  #img3:checked ~ .s1{
+    margin-left: -66.6%;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bar{ 
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: solid #fff 2px;
+    cursor: pointer;
+    transition: all 0.50s ease;
+    margin: 5px;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+/***************************/
+.newly-minted-img,.auction-img{
+  box-shadow: 0px 3px 9px gray;
+  border-radius: 10px;
+
+}
+/* *********************************/
+.crate-info-2{
+  display: none;
+}
+.crate-img-1{ width:30%;}
+.crate-img-2{ width:30%;}
+.crate-img-3{ width:30%;}
+.Mystery-crate-img1,.Mystery-crate-img2,.Mystery-crate-img3{
+  border-radius: 0.75rem;
+  position: relative;
+}
+.Mystery-crate-img1,.Mystery-crate-img2,.Mystery-crate-img3{
+  padding: 10px 30px;
+  
+}
+.Mystery-crate-img1{
+  background: linear-gradient(to top left,yellow,#4E9FE5);
+}
+.Mystery-crate-img2{
+  background: linear-gradient(to top left,#FF5BFC,yellow);
+}
+.Mystery-crate-img3{
+  background: linear-gradient( to top left,#4E9FE5,#FF5BFC);
+}
+.i3-2{
+  font-size: 105px;
+  opacity: 30%;
+  position: absolute;
+  color: #ffffff;
+  right: -7px;
+  top: -50px;
+}
+/* ******************************/
+.caragorie-img1,.caragorie-img2,.caragorie-img3,.caragorie-img4{
+  border-radius: 0.75rem;
+  background: linear-gradient(to top left,#552eaa,#8860F5);
+  box-shadow: 0px 10px 25px #8860F5;
+}
+.icon-section{
+  width: 25%;
+}
+/*********************************/
+.event-img{
+  background-image: url('images/d.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.event-box{
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0px 4px 20px #e66465;
+}
+.event-card{
+  display: none;
+}
+.event-design{
+  background: linear-gradient(to top left,#e67e56f6,#9ea5ee);
+}
+.event-lable-2{
+  background-color:#fdd0bff6;
+  border:transparent;
+  border-radius: 2rem;
+  width: 50%;
+}
+/*********************************/
+.about-content{
+  border-radius: 0.5rem;
+  padding: 6rem;
+  background: linear-gradient(to top left,#1877F2,#9a9aff);
+  box-shadow: 0px 8px 15px #1877F2;
+}
+/************************************/
+.footer{
+  background-color: #9a9aff;
+
+}
+@media(max-width:1024px){
+  .s-btn{
+    display: none;
+  }
+}
+@media(max-width:920px){
+  .search-bar{
+    display: none;
+  }
+}
+@media(max-width:580px){
+  .container{
+    padding: 0% 7.5% 0% 7.5%;
+    /* padding: 0%; */
+  }
+  .btn_1{
+    font-size: larger;
+  }
+  .nav-homepage{
+    margin: -75px;
+  }
+  .home-page-section,.search-section{
+    padding: 0px 9px;
+  }
+  .nav-section{
+    width: 100%;
+    margin-top: 108px;
+  }
+  .search-bar{
+    display: none;
+  }
+  .btn-3-1{
+    display: block;
+  }
+  .btn-3{
+    display: none;
+    /* position: absolute; */
+    font-size: larger;
+    right: 338px;
+    bottom: 0px;
+  }
+  .s-btn{
+    display: block;
+    font-size: larger;
+    top: 8px;
+    right: 95px;
+  }
+  .icon-section{
+    width: 100%;
+  }
+  .main-slide{
+    border-radius: 0%;
+  }
+  .newly-minted-img,.auction-img{
+    width: 200px;
+    height: 110%;
+  
+  }
+  .slide-heading{
+    bottom: 12%;
+    left: 30%;
+    transform: translateX(-80%);
+  }
+  .slide-info{
+    bottom: 2%;
+    left: 30%;
+    transform: translateX(-75%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 5%;
+    left: 85%;
+    transform: translateX(-85%);
+  }
+  .bar{ 
+    height: 8px;
+    width: 8px;
+    margin: 1px;
+  }
+
+  /* .main-slide{
+    border-radius: rem%;
+  } */
+  .crate-info-1{
+    display: none;
+  }
+  .crate-info-2{
+    display: block;
+    margin-bottom: 0px;
+  }
+  .mystery-crate{
+    margin: 0%!important;
+    /* padding-right: 0%!important; */
+  }
+  .Mystery-crate-img1,.Mystery-crate-img2,.Mystery-crate-img3{
+    padding: 7px 12px 16px;
+  }
+  .crate-img-1{
+    width:45px;
+    margin-top: 30px;
+  }
+  .crate-img-2{ 
+    width: 55px;
+    margin-top: 20px;
+  }
+  .crate-img-3{
+    width: 65px;
+    margin-top: 10px;
+  }
+  .crate-size{ font-size: small; padding: 0px;margin: 0px; }
+  .crate-name{ font-size: small; padding: 0px;margin: 0px; }
+  .crate-sec{ font-size: Xx-small; padding: 0px;margin: 0px; }
+  .crate-amt{ font-size: xx-small; padding: 0px;margin: 0px; }
+  .i3-2{
+    opacity:35%;
+    font-size: 80px;
+    right: -10px;
+    top: -43px;
+  }
+  .catagory-sec{
+    margin: 0%;
+  }
+  .catagory-icon{
+    width: 37%;
+  }
+  .catagory-name{
+    font-size: large;
+  }
+  .catagory-amt{
+    font-size: medium;
+  }
+  .event-design{
+    padding: 0px 40px;
+    background:#F7B824;
+  }
+  .event-h2{
+    padding: 10px 5px;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  .event-img-2{
+    visibility: visible;
+    background-size: cover;
+    background-image: url("images/pexels-salah-alawadhi-382297.jpg");
+    border-radius: 1rem;
+    min-height: 270px;
+    min-width: 100%;
+  }
+  .event-lable-1{
+    margin-bottom: 0%;
+    font-size: large;
+    font-weight: bold;
+  }
+  .event-lable-2{
+    width: 100%;
+    background-color: transparent;
+    border: transparent;
+    text-align: end;
+    padding: 0px!important;
+  }
+  .about-content{
+    padding: 1.5rem;  
+  }
+}
